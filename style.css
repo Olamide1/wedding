@@ -1,0 +1,77 @@
+/* Custom Styles for Bulma Integration */
+
+/* Primary Color Override */
+.hero.is-primary {
+    background-image: linear-gradient(to right, #4facfe, #00f2fe);
+}
+
+/* Navbar Brand Title Style */
+.navbar-brand .title {
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Burger Icon Color */
+.navbar-burger.burger span {
+    background-color: #fff;
+}
+
+/* Navbar Menu - link colors */
+.navbar-menu .navbar-item {
+    color: #fff;
+    font-weight: 500;
+}
+
+.navbar-menu .navbar-item:hover {
+    background-color: #4facfe;
+    color: #222;
+}
+
+/* Button Customization */
+.button.is-info.is-large {
+    background-color: #ff6b6b;
+    border-color: transparent;
+    color: #fff;
+}
+
+.button.is-info.is-large:hover {
+    background-color: #ff4757;
+    color: #fff;
+}
+
+/* Feature Columns */
+#features .column {
+    padding: 3rem;
+    background-color: #f9f9f9; /* Light background for feature columns */
+    border-radius: 8px; /* Slight rounding of corners for aesthetic */
+    margin: 1rem; /* Space out columns slightly */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+/* Testimonials Customization */
+#testimonials blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #4facfe;
+    padding-left: 1rem;
+    margin: 1rem 0;
+}
+
+/* Footer Customization */
+.footer {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.footer p {
+    margin-bottom: 0;
+}
+
+/* Responsive Navbar Toggle */
+@media screen and (max-width: 768px) {
+    .navbar-menu {
+        background-color: #333; /* Ensure visibility on toggle */
+    }
+}
+
+/* Include additional responsive or custom styles as needed */
