@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
             messages: [
                 {
                     "role": "user",
-                    "content": `Create a wedding speech for ${coupleNames}. The speaker, ${speakerName}, knows the couple through ${relationship}. ${keyMessages} ${memories} ${otherDetails} finish it in 400 words. Make it humorous too`,
+                    "content": `Write a humorous wedding speech in 400 words. The speech is being given by ${speakerName}, who knows the couple, ${coupleNames}, through ${relationship}. The speech should include the following key messages: ${keyMessages}. Also, incorporate these fond memories: ${memories}. Other details to include are: ${otherDetails}. Ensure the tone is light-hearted and fitting for a joyful wedding occasion. In not more than 400 words.`,
                 }
             ],
             max_tokens: 400, // Adjust the max tokens as needed
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
         };
         const headers = {
             'Content-Type': 'application/json',
-            'Authorization': `Bearer <OPEN_API_KEY>`, // Replace with your OpenAI API key
+            'Authorization': `Bearer <OPEN_AI_KEY>`, // Replace with your OpenAI API key
             'Openai-Organization': organizationId, // Include the Organization ID here
         };
         
