@@ -50,6 +50,8 @@ document.addEventListener("DOMContentLoaded", function () {
     speechForm.addEventListener("submit", function (e) {
         e.preventDefault(); // Prevent the default form submission
 
+        generatedSpeechPlaceholder.innerText = 'Writing your wedding speech...'
+
         // Collect user input from form fields
         const speakerName = document.getElementById("speakerName").value;
         const coupleNames = document.getElementById("coupleNames").value;
